@@ -14,19 +14,19 @@ echo "Start building with destination: $destination"
 
 # Build application
 set -o pipefail && xcodebuild build-for-testing \
-    -workspace TravelNavigation.xcworkspace \
+    -workspace ./ios/TravelNavigation/TravelNavigation.xcworkspace \
     -scheme "$scheme" \
     -destination "$destination" \
     -quiet
 
 echo "Build successful"
-echo "Start testing"
+# echo "Start testing"
 
-# Start running tests
-set -o pipefail && xcodebuild test-without-building \
-    -workspace TravelNavigation.xcworkspace \
-    -scheme "$scheme" \
-    -sdk iphonesimulator \
-    -destination "$destination" \
-    -quiet
-echo "Test successful"
+# # Start running tests
+# set -o pipefail && xcodebuild test-without-building \
+#     -workspace ./ios/TravelNavigation/TravelNavigation.xcworkspace \
+#     -scheme "$scheme" \
+#     -sdk iphonesimulator \
+#     -destination "$destination" \
+#     -quiet
+# echo "Test successful"
