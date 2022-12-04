@@ -6,8 +6,8 @@ on:
     types: [ready_for_review, opened, synchronize, reopened]
 
 jobs:
-  ios-build-job:
-    runs-on: macos-latest
+  ios-ci-job:
+    runs-on: macos-12
     if: github.event.pull_request.draft == false
     steps:
       - name: Checkout
@@ -18,3 +18,21 @@ jobs:
           scheme: TravelNavigation
         run: |
           ci-cd/ios-unit-test-script.sh $scheme
+  android-ci-job:
+    runs-on: macos-12
+    if: github.event.pull_request.draft == false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup JDK 11
+        uses: actions/setup-java@v3
+        with:
+          distribution: "temurin"
+          java-version: "11"
+
+      - name: Show all gradle tasks
+        run: ./android/gradlew -p  ./android tasks
+
+      - name: ktlint check
+        run: ./android/gradlew -p  ./android ktlintCheck
