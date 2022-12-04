@@ -6,7 +6,7 @@ on:
     types: [ready_for_review, opened, synchronize, reopened]
 
 jobs:
-  my-job:
+  ios-build-and-run-unit-tests-job:
     runs-on: macos-latest
     if: github.event.pull_request.draft == false
     steps:
@@ -17,4 +17,4 @@ jobs:
         env:
           scheme: TravelNavigation
         run: |
-          ci-cd/unit-test-script.sh $scheme
+          ci-cd/ios-unit-test-script.sh $scheme
