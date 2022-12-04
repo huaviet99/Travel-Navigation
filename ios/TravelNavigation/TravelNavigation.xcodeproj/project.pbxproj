@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		A1C595AF7B1E1A367964CBCD /* Pods_TravelNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883B389DA61C5B18723547AC /* Pods_TravelNavigation.framework */; };
 		FA0AE936293C657500A57266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AE935293C657500A57266 /* AppDelegate.swift */; };
-		FA0AE938293C657500A57266 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AE937293C657500A57266 /* SceneDelegate.swift */; };
-		FA0AE93A293C657500A57266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AE939293C657500A57266 /* ViewController.swift */; };
-		FA0AE93D293C657500A57266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0AE93B293C657500A57266 /* Main.storyboard */; };
 		FA0AE93F293C657600A57266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0AE93E293C657600A57266 /* Assets.xcassets */; };
 		FA0AE942293C657600A57266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0AE940293C657600A57266 /* LaunchScreen.storyboard */; };
+		FA0AE954293CAA2000A57266 /* TravelNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0AE953293CAA2000A57266 /* TravelNavigation.storyboard */; };
+		FA0AE95A293CACC800A57266 /* TravelNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AE959293CACC800A57266 /* TravelNavigationViewController.swift */; };
+		FA0AE962293CB06300A57266 /* MapUIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0AE961293CB06300A57266 /* MapUIView.xib */; };
+		FA0AE966293CB09E00A57266 /* MapUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AE965293CB09E00A57266 /* MapUIView.swift */; };
+		FA95EB2B293E363800606F2F /* LocationSearchUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA95EB2A293E363800606F2F /* LocationSearchUIView.swift */; };
+		FA95EB2E293E36D900606F2F /* LocationSearchUIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA95EB2D293E36D800606F2F /* LocationSearchUIView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +25,15 @@
 		E1A4B868101A55A14A659C82 /* Pods-TravelNavigation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelNavigation.release.xcconfig"; path = "Target Support Files/Pods-TravelNavigation/Pods-TravelNavigation.release.xcconfig"; sourceTree = "<group>"; };
 		FA0AE932293C657500A57266 /* TravelNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0AE935293C657500A57266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA0AE937293C657500A57266 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA0AE939293C657500A57266 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA0AE93C293C657500A57266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA0AE93E293C657600A57266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA0AE941293C657600A57266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA0AE943293C657600A57266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA0AE953293CAA2000A57266 /* TravelNavigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TravelNavigation.storyboard; sourceTree = "<group>"; };
+		FA0AE959293CACC800A57266 /* TravelNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelNavigationViewController.swift; sourceTree = "<group>"; };
+		FA0AE961293CB06300A57266 /* MapUIView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapUIView.xib; sourceTree = "<group>"; };
+		FA0AE965293CB09E00A57266 /* MapUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUIView.swift; sourceTree = "<group>"; };
+		FA95EB2A293E363800606F2F /* LocationSearchUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchUIView.swift; sourceTree = "<group>"; };
+		FA95EB2D293E36D800606F2F /* LocationSearchUIView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationSearchUIView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,6 @@
 				042819A8285EEC9F0E6A334C /* Pods-TravelNavigation.debug.xcconfig */,
 				E1A4B868101A55A14A659C82 /* Pods-TravelNavigation.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,21 +86,56 @@
 		FA0AE934293C657500A57266 /* TravelNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				FA0AE94A293C65FD00A57266 /* Views */,
+				FA0AE958293CACAE00A57266 /* ViewControllers */,
+				FA0AE94A293C65FD00A57266 /* Layouts */,
 				FA0AE935293C657500A57266 /* AppDelegate.swift */,
-				FA0AE937293C657500A57266 /* SceneDelegate.swift */,
-				FA0AE939293C657500A57266 /* ViewController.swift */,
 				FA0AE93E293C657600A57266 /* Assets.xcassets */,
 				FA0AE943293C657600A57266 /* Info.plist */,
 			);
 			path = TravelNavigation;
 			sourceTree = "<group>";
 		};
-		FA0AE94A293C65FD00A57266 /* Views */ = {
+		FA0AE94A293C65FD00A57266 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
-				FA0AE93B293C657500A57266 /* Main.storyboard */,
+				FA0AE960293CB03A00A57266 /* UIViews */,
+				FA0AE95F293CB01B00A57266 /* Storyboards */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		FA0AE958293CACAE00A57266 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA0AE964293CB08D00A57266 /* Views */,
+				FA0AE959293CACC800A57266 /* TravelNavigationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA0AE95F293CB01B00A57266 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				FA0AE940293C657600A57266 /* LaunchScreen.storyboard */,
+				FA0AE953293CAA2000A57266 /* TravelNavigation.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA0AE960293CB03A00A57266 /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				FA0AE961293CB06300A57266 /* MapUIView.xib */,
+				FA95EB2D293E36D800606F2F /* LocationSearchUIView.xib */,
+			);
+			path = UIViews;
+			sourceTree = "<group>";
+		};
+		FA0AE964293CB08D00A57266 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA0AE965293CB09E00A57266 /* MapUIView.swift */,
+				FA95EB2A293E363800606F2F /* LocationSearchUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,9 +198,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0AE954293CAA2000A57266 /* TravelNavigation.storyboard in Resources */,
+				FA0AE962293CB06300A57266 /* MapUIView.xib in Resources */,
 				FA0AE942293C657600A57266 /* LaunchScreen.storyboard in Resources */,
 				FA0AE93F293C657600A57266 /* Assets.xcassets in Resources */,
-				FA0AE93D293C657500A57266 /* Main.storyboard in Resources */,
+				FA95EB2E293E36D900606F2F /* LocationSearchUIView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,23 +238,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA0AE93A293C657500A57266 /* ViewController.swift in Sources */,
+				FA0AE95A293CACC800A57266 /* TravelNavigationViewController.swift in Sources */,
+				FA95EB2B293E363800606F2F /* LocationSearchUIView.swift in Sources */,
 				FA0AE936293C657500A57266 /* AppDelegate.swift in Sources */,
-				FA0AE938293C657500A57266 /* SceneDelegate.swift in Sources */,
+				FA0AE966293CB09E00A57266 /* MapUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FA0AE93B293C657500A57266 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA0AE93C293C657500A57266 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FA0AE940293C657600A57266 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -347,6 +382,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TravelNavigation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
