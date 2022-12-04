@@ -6,14 +6,14 @@ on:
     types: [ready_for_review, opened, synchronize, reopened]
 
 jobs:
-  ios-build-and-run-unit-tests-job:
+  ios-build-job:
     runs-on: macos-latest
     if: github.event.pull_request.draft == false
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Build and run unit tests with TravelNavigation scheme
+      - name: Build with TravelNavigation scheme
         env:
           scheme: TravelNavigation
         run: |
