@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Travel-Navigation</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiaHVhdmlldDk5OSIsImEiOiJjbGJyb3VkMjcxeGVrM3Zvc29sZXc0eW91In0.85XzHnCWMBDZMBLpwAwZTA</string>
+
 </resources>
